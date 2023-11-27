@@ -226,12 +226,12 @@ void FastSam::draw_objects(const Mat &image, Mat &res, const vector<Object> &obj
         color_mask(obj.rect).setTo(mask_color, obj.boxMask);
     }
     cv::addWeighted(res, 0.5, color_mask, 0.8, 1, res);
-    for (auto &obj : objs)
-    {   // 过滤小目标框
-        if (obj.rect.area() < 20000)
-            continue;
-        cv::rectangle(res, obj.rect, cv::Scalar(0, 0, 255), 2);
-    }
+    // for (auto &obj : objs)
+    // {   // 过滤小目标框
+    //     if (obj.rect.area() < 20000)
+    //         continue;
+    //     cv::rectangle(res, obj.rect, cv::Scalar(0, 0, 255), 2);
+    // }
 }
 
 FastSam::FastSam(const string &engine_file_path,const int warm_cnt) : Inference(engine_file_path)

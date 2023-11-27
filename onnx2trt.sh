@@ -1,6 +1,7 @@
 # 优先建议使用trtexec工具进行onnx2trt，一般位于下载的TensorRT包的bin目录下
-/home/sp/TensorRT-8.4.1.5/bin/trtexec --onnx=/home/sp/projects/fastsam/models/fast_sam_x.onnx \
-                                --saveEngine=/home/sp/projects/fastsam/models/fast_sam_x.engine \
+# 建议onnx以及saveEngine使用绝对路径
+/home/xxx/TensorRT-8.4.1.5/bin/trtexec --onnx=/home/xxx/projects/fastsam/models/fast_sam_x.onnx \
+                                --saveEngine=/home/xxx/projects/fastsam/models/fast_sam_x.engine \
                                 --explicitBatch \
                                 --minShapes=images:1x3x1024x1024 \
                                 --optShapes=images:1x3x1024x1024 \

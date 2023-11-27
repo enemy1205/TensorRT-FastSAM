@@ -22,8 +22,8 @@ message(STATUS "OpenCV Libraries: \n${OpenCV_LIBRARIES}\n")
 message(STATUS "OpenCV Headers: \n${OpenCV_INCLUDE_DIRS}\n")
 
 # TensorRT
-set(TensorRT_INCLUDE_DIRS /home/sp/TensorRT-8.4.1.5/include)
-set(TensorRT_LIBRARIES /home/sp/TensorRT-8.4.1.5/lib)
+set(TensorRT_INCLUDE_DIRS /home/xxx/TensorRT-8.4.1.5/include)
+set(TensorRT_LIBRARIES /home/xxx/TensorRT-8.4.1.5/lib)
 
 
 message(STATUS "TensorRT Libs: \n${TensorRT_LIBRARIES}\n")
