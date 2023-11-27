@@ -1,0 +1,17 @@
+nvidia-pyindex
+
+opencv-python
+torch==1.13.0
+pycuda
+tensorrt
+onnx-graphsurgeon
+onnxruntime-gpu
+tqdm
+requests
+matplotlib
+pyyaml
+psutil
+torchvision
+scipy
+Pillow
+# pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
